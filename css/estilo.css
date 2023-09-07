@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body{
+    background-color: aliceblue;
+}
+
+/* Header */
+
+header{
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.Logo {
+    width: 150px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: blue;
+}
+
+/* MAIN */
+
+main{
+    margin: 20px;
+    padding: 20px;
+
+}
+
+h1,
+h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px 0px;
+}
+
+/* Footer */
+
+footer{
+    margin: 10px;
+    padding: 20px;
+    border-top: 2px solid red;
+}
+
+/* Videos */
+
+.contenedorVideos{
+    margin: 30px;
+    border: 3px solid blueviolet
+    }
+    
+    .quienessomos{
+        background-color: aqua;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    /* Inframe */
+
+    iframe{
+        display: block;
+        margin: auto;
+
+    }
+
+    /* Contacto */
+    
+    form{
+        margin-top: 20px;
+    }
+    
+    label{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: black;
+    }
+
+    input,textarea{
+        display: block;
+        width: 350px;
+        padding: 10px;
+        border: 1px solid burlywood;
+        border-radius: 3px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* Vista tablet */
+
+  @media (max-width: 1023px){
+      .quienessomos{
+          height: auto;
+          flex-direction: column;
+          text-align: center;
+        }
+.quienessomos p {
+    font-size: 2.5rem;
+    
+}
+    }
+
+    /* Videos */
+
+    .contenedorVideos {
+        margin: 5vh;
+        font-size: 2rem;
+    }
+
+    /* Quienes Somos */
+
+    .quienessomos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedorVideos {
+        flex-direction: column;
+    }
+
+    /* Logo */
+.Logo{
+    padding: auto;
+}
+
+/* Vista Movil */
+
+/* 0 a 768px */
+
+@media (max-width:768px) {
+    .contenedorVideos{
+        grid-template-columns: 5fr;
+    }
+}
